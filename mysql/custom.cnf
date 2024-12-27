@@ -1,0 +1,16 @@
+[mysqld]
+# Mengatur ukuran buffer untuk meningkatkan performa
+innodb_buffer_pool_size = 128M
+innodb_log_file_size = 64M
+
+# Konfigurasi karakter set
+character-set-server = utf8mb4
+collation-server = utf8mb4_general_ci
+
+# Mengaktifkan logging slow query untuk debugging
+slow_query_log = 1
+slow_query_log_file = /var/log/mysql/slow-queries.log
+long_query_time = 2
+
+# Konfigurasi koneksi
+max_connections = 150
